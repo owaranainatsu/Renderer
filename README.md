@@ -1,4 +1,4 @@
 # Renderer
 A raytracing renderer out of personal insterest
 # How to use
-predefine a secne you want in [this file](https://github.com/owaranainatsu/Renderer/blob/main/main.cpp).
+1. First predefine a secne we want in [generate_scene.h](https://github.com/owaranainatsu/Renderer/blob/main/generate_scene.h). Then call it in [main.cpp](https://github.com/owaranainatsu/Renderer/blob/64c9f9debf3f5aeaee9f2d73b7c8f4e2a3a661c4/main.cpp#L40).
