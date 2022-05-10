@@ -10,7 +10,9 @@ class camera {
                double vfov, // vertical field-of-view in degrees
                double aspect_ratio,
                double aperture,
-               double focus_dist) {
+               double focus_dist,
+               double time0 = 0,
+               double time1 = 0) {
                 
             auto theta = degrees_to_radians(vfov);
             auto h = tan(theta / 2);
@@ -25,7 +27,8 @@ class camera {
             vertical = focus_dist * viewport_height * v;
             lower_left_corner = origin - horizontal / 2 - vertical / 2 - focus_dist * w;
             lens_radius = aperture / 2;
-
+            t0 = time0;
+            t1 = time1;
 
         }
 
@@ -42,6 +45,7 @@ class camera {
         vec3 vertical;
         vec3 u, v, w;
         double lens_radius;
+        double t0, t1; //shutter open/close times
 
           
 };
