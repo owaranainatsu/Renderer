@@ -31,18 +31,18 @@ color ray_color(const ray& r, const hittable& world, int depth) {
 int main () {
     //image
     const auto aspect_ratio = 3.0 / 2.0;
-    const int image_width = 1200;
+    const int image_width = 1000;
     const int image_height = static_cast<int>(image_width / aspect_ratio);
     const int samples_per_pixel = 100;
-    const int max_depth = 50;
+    const int max_depth = 30;
     
     //world
-    auto world = scene0();
+    auto world = random_scene();
 
 
     //camera
-    point3 lookfrom(-1,2,1);
-    point3 lookat(0,0,-1);
+    point3 lookfrom(13,2,2);
+    point3 lookat(0,0,0);
     vec3 vup(0,1,0);
     auto dist_to_focus = 10.0;
     auto aperture = 0.1;
