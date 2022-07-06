@@ -5,7 +5,7 @@ A raytracing renderer out of personal insterest and c++ practice. Keep updating.
 2. Compile main.cpp to get an executable file main.exe.
 3. Use command ```main.exe > image.ppm``` to generate a ppm format image, then use a [ppm viewer](https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html) to show the result.
 # Results Preview
-
+![image](https://github.com/AngelSXD/sxd_first_repository/blob/master/images/20160615165142.png)
 # To do list
 Countless work to do but first:
 1. BRDF model
